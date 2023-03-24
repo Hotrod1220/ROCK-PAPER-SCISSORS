@@ -15,7 +15,7 @@ axes {
 }
 axes {
   tag: "wdth"
-  min_value: 50
+  min_value: 75
   max_value: 200
 }
 axes {
@@ -23,3 +23,20 @@ axes {
   min_value: -10
   max_value: 0
 } */
+
+.rock__imgs > * {
+  position: absolute; 
+  height: 50vh;
+  left: 10%;
+  width: 75%;
+  z-index: 1;
+}
+
+#rock2 {
+  z-index: 2;
+}
+
+#rock3 {
+  width: 50%;
+  left: 25%;
+}
