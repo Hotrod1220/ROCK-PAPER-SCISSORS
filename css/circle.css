@@ -1,0 +1,9 @@
+.circle {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: scaleX(10);
+    filter: blur(15px);
+    opacity: 50%;
+    z-index: 0;
+}
