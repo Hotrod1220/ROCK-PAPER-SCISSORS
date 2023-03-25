@@ -1,6 +1,8 @@
 @import 'normalize.css';
+@import 'animations.css';
 @import 'fonts.css';
 @import 'scissors.css';
 @import 'rock.css';
 @import 'paper.css';
 @import 'circle.css';
+@import 'crack.css';

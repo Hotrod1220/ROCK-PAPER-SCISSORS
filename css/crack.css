@@ -1,0 +1,18 @@
+.crack {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: scaleX(2);
+    opacity: 0;
+    animation: cracks 0.5s 1s linear, shake 1.5s 3s infinite, fade 1.5s 3s linear;
+}
+
+@keyframes cracks {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
