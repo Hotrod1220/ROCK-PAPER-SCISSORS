@@ -1,18 +1,96 @@
 .crack {
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 5%;
+    align-items: center;
     transform: scaleX(2);
     opacity: 0;
-    animation: cracks 0.5s 1s linear, shake 1.5s 3s infinite, fade 1.5s 3s linear;
+    animation: fade-in 0.2s 1s linear, shake-crack 2.5s 3s infinite, fade-out 0.2s 4.5s linear;
+    animation-fill-mode: forwards;
 }
 
-@keyframes cracks {
-    from {
-        opacity: 0;
+@keyframes shake-crack {
+    0% {
+        transform: translateX(0%) scaleX(2);
     }
 
-    to {
-        opacity: 1;
+    5% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    10% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    15% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    20% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    25% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    30% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    35% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    40% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    45% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    50% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    55% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    60% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    65% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    70% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    75% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    80% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    85% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    90% {
+        transform: translateX(-0.5%) scaleX(2);
+    }
+
+    95% {
+        transform: translateX(0.5%) scaleX(2);
+    }
+
+    100% {
+        transform: translateX(0%) scaleX(2);
     }
 }

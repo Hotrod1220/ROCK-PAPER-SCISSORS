@@ -1,6 +1,95 @@
 .rock {
-    font-family: Science-Gothic;
-    color: #3D3D3D;
+  font-family: Science-Gothic;
+  color: #3D3D3D;
+  position: absolute;
+  animation: rise 2.5s 3s linear, fade-in 0.2s 3s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateX(0%) translateY(30%);
+  }
+
+  5% {
+    transform: translateX(0.5%) translateY(28.5%);
+  }
+
+  10% {
+    transform: translateX(-0.5%) translateY(27%);
+  }
+
+  15% {
+    transform: translateX(0.5%) translateY(25.5%);
+  }
+
+  20% {
+    transform: translateX(-0.5%) translateY(24%);
+  }
+
+  25% {
+    transform: translateX(0.5%) translateY(22.5%);
+  }
+
+  30% {
+    transform: translateX(-0.5%) translateY(21%);
+  }
+
+  35% {
+    transform: translateX(0.5%) translateY(19.5%);
+  }
+
+  40% {
+    transform: translateX(-0.5%) translateY(18%);
+  }
+
+  45% {
+    transform: translateX(0.5%) translateY(16.5%);
+  }
+
+  50% {
+    transform: translateX(-0.5%) translateY(15%);
+  }
+
+  55% {
+    transform: translateX(0.5%) translateY(13.5%);
+  }
+
+  60% {
+    transform: translateX(-0.5%) translateY(12%);
+  }
+
+  65% {
+    transform: translateX(0.5%) translateY(10.5%);
+  }
+
+  70% {
+    transform: translateX(-0.5%) translateY(9%);
+  }
+
+  75% {
+    transform: translateX(0.5%) translateY(7.5%);
+  }
+
+  80% {
+    transform: translateX(-0.5%) translateY(6%);
+  }
+
+  85% {
+    transform: translateX(0.5%) translateY(4.5%);
+  }
+
+  90% {
+    transform: translateX(-0.5%) translateY(3%);
+  }
+
+  95% {
+    transform: translateX(0.5%) translateY(1.5%);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
 }
 
 /* axes {
@@ -24,8 +113,8 @@ axes {
   max_value: 0
 } */
 
-.rock__imgs > * {
-  position: absolute; 
+.rock__imgs>* {
+  position: absolute;
   height: 50vh;
   left: 10%;
   width: 75%;
@@ -33,7 +122,7 @@ axes {
   top: -100%;
 }
 
-.rock__imgs > *:after {
+.rock__imgs>*:after {
   left: 10%;
   top: 10%;
 }
