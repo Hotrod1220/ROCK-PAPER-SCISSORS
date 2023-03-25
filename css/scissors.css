@@ -3,4 +3,16 @@
     color: #787878;
     margin: 0;
     position: relative;
+    animation: .3s squash .85s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes squash {
+    from {
+        transform: scaleY(1);
+    }
+    
+    to {
+        transform: scaleY(0) skewX(30deg);
+    }
 }
