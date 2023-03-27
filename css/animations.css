@@ -10,12 +10,7 @@
 }
 
 @keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-
     to {
-        visibility: hidden;
         opacity: 0;
     }
 }

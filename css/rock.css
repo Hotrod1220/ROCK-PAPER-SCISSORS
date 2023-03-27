@@ -2,7 +2,7 @@
   font-family: Science-Gothic;
   color: #3D3D3D;
   position: absolute;
-  animation: rise 2.5s 3s linear, fade-in 0.2s 3s linear;
+  animation: rise 2.5s 3s linear, fade-in 0.2s 3s linear, fade-out 0s 9.6s linear;
   animation-fill-mode: both;
 }
 
