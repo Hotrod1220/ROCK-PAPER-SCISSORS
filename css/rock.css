@@ -2,27 +2,114 @@
   font-family: Science-Gothic;
   color: #3D3D3D;
   position: absolute;
-  animation: word-falling 1s ease-in/*, rise 2.5s 3s linear, fade-out 0s 9.6s linear*/;
+  animation: rise 2.5s 3s linear, fade-out 0s 9.6s linear;
   animation-fill-mode: both;
   z-index: 2;
 }
 
+.rock>* {
+  margin: -20px;
+  display: inline-block;
+}
+
 .rock span:first-child {
-  transform: rotate(20deg) translateX(-10%) translateY(100%); 
+  transform: translateY(20%) rotate(45deg);
+  animation: word-falling 1s ease-in, split-letter1 1s 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.rock span:nth-child(2) {
+  transform: translateY(-10%) rotate(20deg);
+  animation: word-falling 1s ease-in, split-letter2 1s 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.rock span:nth-child(3) {
+  transform: translateX(-20%) translateY(30%) rotate(-10deg);
+  animation: word-falling2 1s ease-in, split-letter3 1s 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.rock span:last-child {
+  transform: rotate(-30deg);
+  animation: word-falling2 1s ease-in, split-letter4 1s 1s ease;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes split-letter1 {
+  0% {
+    transform: translateY(20%) rotate(45deg);
+  }
+
+  50% {
+    transform: translateX(-40%) translateY(80%) rotate(60deg);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+}
+
+@keyframes split-letter2 {
+  0% {
+    transform: translateY(-10%) rotate(20deg);
+  }
+
+  50% {
+    transform: translateX(-20%) translateY(60%) rotate(15deg);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+}
+
+@keyframes split-letter3 {
+  0% {
+    transform: translateX(-20%) translateY(30%) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(20%) translateY(60%) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+}
+
+@keyframes split-letter4 {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: translateX(40%) translateY(70%) rotate(-50deg);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
 }
 
 @keyframes word-falling {
   from {
-    transform: translateY(-800%);
+    transform: translateY(-800%) rotate(45deg);
   }
+
   to {
     transform: translateY(0%);
   }
 }
 
-@keyframes spilt-letter1 {
+@keyframes word-falling2 {
   from {
-    transform: translateX(-10%) translateY(20%); 
+    transform: translateY(-800%) rotate(-45deg);
+  }
+
+  to {
+    transform: translateY(0%);
   }
 }
 
@@ -132,132 +219,3 @@ axes {
   min_value: -10
   max_value: 0
 } */
-
-.rock__imgs>* {
-  position: absolute;
-  height: 50vh;
-  left: 10%;
-  width: 75%;
-  z-index: 1;
-  top: -100%;
-}
-
-.rock__imgs>*:after {
-  left: 10%;
-  top: 10%;
-}
-
-#rock1 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart1 1s ease-out;
-  left: 30%;
-}
-
-#rock2 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart2 1s ease-out;
-  z-index: 2;
-}
-
-#rock3 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart3 1s ease-out;
-  width: 30%;
-}
-
-#rock4 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart4 1s ease-out;
-}
-
-#rock5 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart5 1s ease-out;
-}
-
-#rock6 {
-  animation: rock-falling 1s ease-in, 1s spreading-apart6 1s ease-out;
-}
-
-@keyframes rock-falling {
-  from {
-    top: -100%;
-  }
-
-  to {
-    top: 10%;
-  }
-}
-
-@keyframes spreading-apart1 {
-  from {
-    top: 10%;
-    left: 30%;
-  }
-
-  to {
-    top: 60%;
-    left: 100%;
-    transform: rotate(60deg);
-  }
-}
-
-@keyframes spreading-apart2 {
-  from {
-    top: 10%;
-    left: 10%;
-  }
-
-  to {
-    top: 70%;
-    left: -70%;
-    transform: rotate(-90deg);
-  }
-}
-
-@keyframes spreading-apart3 {
-  from {
-    top: 10%;
-    left: 10%;
-  }
-
-  to {
-    top: 20%;
-    left: -70%;
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes spreading-apart4 {
-  from {
-    top: 10%;
-    left: 10%;
-  }
-
-  to {
-    top: 120%;
-    left: 100%;
-    transform: rotate(60deg);
-  }
-}
-
-@keyframes spreading-apart5 {
-  from {
-    top: 10%;
-    left: 10%;
-  }
-
-  to {
-    top: 120%;
-    left: 40%;
-    transform: rotate(-60deg);
-  }
-}
-
-@keyframes spreading-apart6 {
-  from {
-    top: 10%;
-    left: 10%;
-  }
-
-  to {
-    top: 150%;
-    left: 20%;
-    transform: rotate(80deg);
-  }
-}

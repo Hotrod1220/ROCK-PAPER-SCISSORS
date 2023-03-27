@@ -1,0 +1,128 @@
+.rock__imgs>* {
+    position: absolute;
+    height: 50vh;
+    left: 10%;
+    width: 75%;
+    z-index: 1;
+    top: -100%;
+  }
+  
+  .rock__imgs>*:after {
+    left: 10%;
+    top: 10%;
+  }
+  
+  #rock1 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart1 1s ease-out;
+    left: 30%;
+  }
+  
+  #rock2 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart2 1s ease-out;
+    z-index: 2;
+  }
+  
+  #rock3 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart3 1s ease-out;
+    width: 30%;
+  }
+  
+  #rock4 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart4 1s ease-out;
+  }
+  
+  #rock5 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart5 1s ease-out;
+  }
+  
+  #rock6 {
+    animation: rock-falling 1s ease-in, 1s spreading-apart6 1s ease-out;
+  }
+  
+  @keyframes rock-falling {
+    from {
+      top: -100%;
+    }
+  
+    to {
+      top: 10%;
+    }
+  }
+  
+  @keyframes spreading-apart1 {
+    from {
+      top: 10%;
+      left: 30%;
+    }
+  
+    to {
+      top: 60%;
+      left: 100%;
+      transform: rotate(60deg);
+    }
+  }
+  
+  @keyframes spreading-apart2 {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+  
+    to {
+      top: 70%;
+      left: -70%;
+      transform: rotate(-90deg);
+    }
+  }
+  
+  @keyframes spreading-apart3 {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+  
+    to {
+      top: 20%;
+      left: -70%;
+      transform: rotate(90deg);
+    }
+  }
+  
+  @keyframes spreading-apart4 {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+  
+    to {
+      top: 120%;
+      left: 100%;
+      transform: rotate(60deg);
+    }
+  }
+  
+  @keyframes spreading-apart5 {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+  
+    to {
+      top: 120%;
+      left: 40%;
+      transform: rotate(-60deg);
+    }
+  }
+  
+  @keyframes spreading-apart6 {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+  
+    to {
+      top: 150%;
+      left: 20%;
+      transform: rotate(80deg);
+    }
+  }
