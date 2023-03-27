@@ -110,7 +110,7 @@
         transform: translateX(55%) translateY(-7%) rotate(90deg) rotateY(70deg) rotateX(14deg) skew(330deg);
     }
 
-    90% {
+    95% {
         transform: translateX(52.5%) translateY(-3.5%) rotate(90deg) rotateY(70deg) rotateX(13deg) skew(330deg);
     }
 
