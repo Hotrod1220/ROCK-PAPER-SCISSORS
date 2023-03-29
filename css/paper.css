@@ -5,7 +5,7 @@
     position: absolute;
     opacity: 1;
     animation: 4s float-paper 6s linear, rotateUp 2s 10s;
-    transform: translateX(0%) translateY(-250%) skew(330deg);
+    transform: translateX(0%) translateY(-350%) skew(330deg);
     animation-fill-mode: forwards;
     border-color: black;
     text-shadow: 1px 1px blue;
