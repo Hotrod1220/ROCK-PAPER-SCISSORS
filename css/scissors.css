@@ -16,3 +16,78 @@
         transform: scaleY(0) skewX(30deg);
     }
 }
+
+.scissors__img--container {
+    display: flex;
+    position: relative;
+}
+
+.scissors__bottom {
+    transform-origin: 85% 200%;
+    animation: cutting 0.5s ease infinite alternate;
+}
+.scissors__top {
+    transform-origin: 85% 200%;
+    animation: cutting1 0.5s linear infinite alternate;
+}
+
+.scissors__img {
+    position: absolute;
+    width: 300px;
+    z-index: 5;
+    left: 50vw;
+    top: 50vh;
+
+    /* animation: cut-paper 4s 4s ease*/
+    animation-fill-mode: backwards;
+    /* transform: translateX(50%) translateY(50%); */
+}
+
+@keyframes cut-paper {
+    0% {
+        left: 100vw;
+        top: 50vh;
+    }
+
+    10% {
+        left: 61vw;
+        top: 44vh; 
+    }
+
+    30% {
+        left: 25vw;
+        top: 39vh;
+    }
+}
+
+@keyframes cutting {
+    to {
+        transform: rotate(7deg);
+        transform-origin: 85% 200%;
+    }
+}
+@keyframes cutting1 {
+    to {
+        transform: rotate(-7deg);
+        transform-origin: 85% 200%;
+    }
+}
+
+
+
+
+/* Start position     
+    left: 61vw;
+    top: 44vh; 
+
+    End of first cut 
+    left: 25vw;
+    top: 39vh;
+
+    Second Cut
+    left: 25vw;
+    top: 36vh;
+
+    left: 65vw;
+    top: 32vh;
+*/
