@@ -11,7 +11,7 @@
     from {
         transform: scaleY(1);
     }
-    
+
     to {
         transform: scaleY(0) skewX(30deg);
     }
@@ -26,6 +26,7 @@
     transform-origin: 85% 200%;
     animation: cutting 0.2s ease infinite alternate;
 }
+
 .scissors__top {
     transform-origin: 85% 200%;
     animation: cutting1 0.2s linear infinite alternate;
@@ -38,7 +39,7 @@
     left: 100vw;
     top: 50vh;
     transform: rotate(5deg);
-    animation: cut-paper 1s 11.5s linear, cut-paper2 1s 13.5s linear;
+    animation: cut-paper 1s 11.5s linear, cut-paper2 1s 13.5s linear, cut-screen 1s 16s linear;
 }
 
 @keyframes cut-paper {
@@ -59,7 +60,7 @@
         top: 39vh;
         transform: rotate(5deg);
     }
-    
+
     100% {
         left: -20vw;
         top: 34vh;
@@ -85,7 +86,7 @@
         top: 32vh;
         transform: rotate(-5deg) rotateY(185deg);
     }
-    
+
     100% {
         left: 100vw;
         top: 25vh;
@@ -99,6 +100,7 @@
         transform-origin: 85% 200%;
     }
 }
+
 @keyframes cutting1 {
     to {
         transform: rotate(-7deg);
@@ -106,21 +108,8 @@
     }
 }
 
-
-
-
-/* Start position     
-    left: 61vw;
-    top: 44vh; 
-
-    End of first cut 
-    left: 25vw;
-    top: 39vh;
-
-    Second Cut
-    left: 25vw;
-    top: 36vh;
-
-    left: 65vw;
-    top: 32vh;
-*/
+@keyframes cut-screen {
+    to {
+        left: -50vw;
+    }
+}
