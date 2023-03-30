@@ -24,39 +24,72 @@
 
 .scissors__bottom {
     transform-origin: 85% 200%;
-    animation: cutting 0.5s ease infinite alternate;
+    animation: cutting 0.2s ease infinite alternate;
 }
 .scissors__top {
     transform-origin: 85% 200%;
-    animation: cutting1 0.5s linear infinite alternate;
+    animation: cutting1 0.2s linear infinite alternate;
 }
 
 .scissors__img {
     position: absolute;
     width: 300px;
     z-index: 5;
-    left: 50vw;
+    left: 100vw;
     top: 50vh;
-
-    /* animation: cut-paper 4s 4s ease*/
-    animation-fill-mode: backwards;
-    /* transform: translateX(50%) translateY(50%); */
+    transform: rotate(5deg);
+    animation: cut-paper 1s 11.5s linear, cut-paper2 1s 13.5s linear;
 }
 
 @keyframes cut-paper {
     0% {
         left: 100vw;
         top: 50vh;
+        transform: rotate(5deg);
     }
 
-    10% {
+    33% {
         left: 61vw;
-        top: 44vh; 
+        top: 44vh;
+        transform: rotate(5deg);
     }
 
-    30% {
+    66% {
         left: 25vw;
         top: 39vh;
+        transform: rotate(5deg);
+    }
+    
+    100% {
+        left: -20vw;
+        top: 34vh;
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes cut-paper2 {
+    0% {
+        left: -10vw;
+        top: 40vh;
+        transform: rotate(-5deg) rotateY(185deg);
+    }
+
+    33% {
+        left: 25vw;
+        top: 36vh;
+        transform: rotate(-5deg) rotateY(185deg);
+    }
+
+    66% {
+        left: 65vw;
+        top: 32vh;
+        transform: rotate(-5deg) rotateY(185deg);
+    }
+    
+    100% {
+        left: 100vw;
+        top: 25vh;
+        transform: rotate(-5deg) rotateY(185deg);
     }
 }
 
