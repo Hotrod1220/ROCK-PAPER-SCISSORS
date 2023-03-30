@@ -33,7 +33,3 @@ svg {
 h1 {
     font-size: 200px;
 }
-
-:root {
-    --delay-time: 8s;
-}
