@@ -113,11 +113,11 @@
 
 @keyframes cut-screen {
     from {
-        top: 45vh;
+        top: 46vh;
     }
 
     to {
-        top: 45vh;
+        top: 50vh;
         left: -50vw;
     }
 }

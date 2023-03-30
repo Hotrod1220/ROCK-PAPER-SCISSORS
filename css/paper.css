@@ -4,7 +4,9 @@
     display: inline-block;
     position: absolute;
     opacity: 1;
-    animation: /*4s float-paper 6s linear,*/ rotateUp 2s 10s;
+    animation:
+        /*4s float-paper 6s linear,*/
+        rotateUp 2s 10s;
     transform: translateX(0%) translateY(-60%) skew(330deg);
     animation-fill-mode: forwards;
     border-color: black;
@@ -26,6 +28,7 @@
     transform: translateX(10%);
     animation-fill-mode: forwards;
     transform-origin: 90% 30%;
+    fill: white;
 }
 
 #top {
@@ -51,7 +54,7 @@
 
 @keyframes cutRight {
     50% {
-        transform: rotate(3deg) translateX(10%);     
+        transform: rotate(3deg) translateX(10%);
     }
 
     100% {
